@@ -1,12 +1,7 @@
-* { marigin:0 ; padding:0}
-
-body 
-{
-	 font-family: arial;
-	 background-color: white;
-
+* { 
+	margin: 0; 
+	padding: 0;
 }
-
 #header 
 {
 	background-color: #18121E;
@@ -69,7 +64,6 @@ body
 	padding: 20px;
 }
 
-
 #footer
 {
 	background-color: #18121E;
@@ -80,4 +74,421 @@ body
 
 }
 
+@font-face {
+    font-family: 'exo';
+    src: url('../Fonts/exo-regular-webfont.woff2') format('woff2'),
+         url('../Fonts/exo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vollkorn';
+    src: url('../Fonts/vollkorn-semibold-webfont.woff2') format('woff2'),
+         url('../Fonts/vollkorn-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	background: #000;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+header{
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	background-color: rgba(9, 7, 12, 0.5);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content:space-between;
+	width: 100%;
+	height: 6em;
 
+}
+header div{
+	width: 5em;
+	height: 5em;
+	margin: 1em;
+}
+main{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+
+}
+.small-boxes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.small-box{
+    margin: .5em;
+    padding: .5em;
+    width: 35%;
+    height: 35%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: rgba(24, 18, 30, 0.4);
+    font-family: 'exo';
+    color: #eac67a ;
+    font-size: .5em;
+    text-align: center;
+}
+
+#loggo {
+	float: left;
+	border: solid 1px #ffffff;
+	width: 5em;
+	height: 5em;
+	margin: 0 1em 0 1em;
+}
+
+.first{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	background-position: center center;
+	background-image: url("../grafik/city_ljus.jpg");
+	background-size: 100%;
+	font-family: 'vollkorn';
+	font-size: 3.5em;
+	color: #eac67a;
+}
+
+
+.project{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin-top: 1em;
+	
+	font-family: 'exo';
+	color: #eac67a;
+}
+
+.project img{
+	padding: 0.2em;
+}
+.apple,
+.amazon,
+.onwork{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  	width: 78%;
+  	margin:2em;
+  	background-color: rgba(35, 50, 55, 0.4);
+}
+.info{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    margin: 0.5em;
+   
+}
+
+.logo{
+	display: flex;
+    flex-flow: column wrap;
+    width: 14%;
+    margin: 0.5em;
+}
+.info h3, 
+.info h4{
+	text-align: center;
+	}
+.info picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.navBar li{
+	display: inline;
+	padding: 0 1em 0 1em;
+	font-size: 1.5em;
+}
+
+.box{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3em;
+	padding: 1em;
+	width: 70%;
+	height: 70%;
+	background-color: rgba(24, 18, 30, 0.4);
+	font-family: 'vollkorn';
+	color: #eac67a ;
+    text-align: center;
+}
+
+.about{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.employee{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+	height: 100%;
+	margin: 1em;
+	background-color: rgba(35, 50, 55, 0.4);
+	font-family: 'exo';
+	color: #eac67a;
+}
+
+.employee picture img{
+	margin: 0.5em;
+}
+
+.emp-info h3{
+	font-family: "vollkorn";
+	margin-bottom: 0.3em;
+
+}
+.contact-sec{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: 1.5em;
+	padding: 1em;
+	width: 78%;
+	background-color: rgba(35, 50, 55, 0.4);
+	font-family: 'exo';
+	color: #eac67a;
+}
+.contact-info{
+	display: flex;
+	flex-flow: column wrap;
+	font-size: 1.5em;
+}
+.contact-info p,
+#mail-us{
+	margin: 0.4em;
+}
+.inputbox{
+	width: 21em;
+	height: 2em;
+	font-family: "exo";
+}
+.inputarea{
+	font-family: "exo";
+}
+.submit-button{
+	font-family: "exo";
+	font-size: 1.4em;
+	border: none;
+	border-radius: 30%;
+	background-color: #984B43;
+	color: #eac67a;
+	padding: 0.5em;
+	text-align: center;
+}
+.submit-button:hover{
+	font-weight: bold;
+}
+p{
+	color: #eac67a;
+	font-family: "exo";
+}
+h1,
+h2,
+h3,
+h4{ 
+	color: #eac67a;
+	font-family: 'vollkorn';
+}
+.about h2,
+.contact-sec h2,
+.project h2{
+		width: 100%;
+		text-align:center;
+		font-size: 200%;
+		margin-top: 2em;
+}
+a{
+	text-decoration: none;
+	color: #eac67a;
+	font-family: "exo";
+}
+a:hover{
+	color: #984b43;
+}
+
+footer{
+	background-color: #18121e;
+	color: #eac67a;
+	font-family: 'exo';
+}
+footer ul{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 1em 0em 1em 0em;
+	font-size: 1.3em;
+	list-style: none;
+}
+
+@media screen and (max-width: 426px) {
+    .box{
+    	font-size: .25em;
+    }
+    .small-box{
+    	font-size: .2em;
+    	padding: 0;
+    	margin: 0.75em;
+    }
+    .small-boxes{
+    	margin: 0;
+    }
+
+.apple,
+.amazon,
+.onwork{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  	width: 100%;
+  	margin-left:0.1em;
+}
+.info{
+    margin: 0.1em;
+    text-align: left;
+    font-size: 0.7em;
+}
+
+
+    .about{
+		display: flex;
+		flex-flow: column wrap;
+	}
+	.employee{
+		display: flex;
+		flex-flow: row wrap;
+		width: 95%;
+		height: 100%;
+	}
+	
+	.employee picture img{
+		
+		margin: 0.5em;
+	}
+	.contact{
+		width: 95%;
+		height: 100%;
+
+	}
+	.contact-info{
+		font-size: 1.2em;
+		margin-bottom: 1em;
+		padding: 0;
+	}
+    a{
+    	font-size: .5em;
+    }
+  
+    .navBar li{
+    	padding: 0.1em 0 .1em;
+    }
+    header div{
+    	height: 2em;
+    	width: 2em;
+    	margin: 0;
+    }
+    header{
+    	height: 3em;
+    }
+    .contact-info a{
+    	font-size: 1em;
+    }
+	footer ul{
+		font-size: 0.6em;
+	}
+	.footer a{
+		font-size: 1em;
+	}
+	.about h2,
+	.contact-sec h2,
+	.project h2{
+		font-size: 160%;
+	}
+	.apple,
+	.amazon,
+	.onwork{
+		margin: 0.5em;
+	}
+	.info{
+		width: 45%;
+	}
+}
+  
+@media screen and (min-width: 427px) and (max-width: 769px){
+    .box{
+    	font-size: .3em;
+    }
+    .small-box{
+    	font-size: .2em;
+    	padding: 0;
+    	margin: 0.5em;
+    }
+    .small-boxes{
+    	margin: 0;
+    }
+   a{
+    	font-size: .7em;
+    }
+    .navBar li{
+    	padding: 0 .2em 0 .2em;
+    }
+    header div{
+    	height: 2em;
+    	width: 2em;
+    	margin: 0;
+    }
+    header{
+    	height: 4em;
+    }
+       .contact-info a{
+    	font-size: 1em;
+    }
+	footer ul{
+		font-size: 0.8em;
+	}
+	.footer a{
+		font-size: 1em;
+	}
+	.info{
+		width: 45%;
+	}
+}
